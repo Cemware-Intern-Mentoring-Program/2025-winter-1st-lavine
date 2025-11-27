@@ -28,6 +28,13 @@ public class User {
     private List<Task> tasks = new ArrayList<>();
 
     public User(String name) {
+        changeName(name);
+    }
+
+    public void changeName(String name) {
+        if(name == null || name.isBlank()) {
+            throw new IllegalArgumentException("이름이 비어있습니다.");
+        }
         this.name = name;
     }
 

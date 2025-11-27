@@ -30,6 +30,13 @@ public class Group {
 
     public Group(User user, String name) {
         this.user = user;
+        changeName(name);
+    }
+
+    public void changeName(String name) {
+        if(name == null || name.isBlank()) {
+            throw new IllegalArgumentException("이름이 비어있습니다.");
+        }
         this.name = name;
     }
 }
