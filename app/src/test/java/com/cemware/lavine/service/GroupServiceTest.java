@@ -4,6 +4,7 @@ import com.cemware.lavine.dto.GroupResponse;
 import com.cemware.lavine.entity.Group;
 import com.cemware.lavine.entity.Task;
 import com.cemware.lavine.entity.User;
+import com.cemware.lavine.exception.ResourceNotFoundException;
 import com.cemware.lavine.repository.GroupRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -66,7 +67,7 @@ class GroupServiceTest {
 
         // when & then
         assertThatThrownBy(() -> groupService.getGroup(groupId))
-                .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("그룹을 찾을 수 없습니다");
+                .isInstanceOf(ResourceNotFoundException.class)
+                .hasMessageContaining("찾을 수 없습니다");
     }
 }

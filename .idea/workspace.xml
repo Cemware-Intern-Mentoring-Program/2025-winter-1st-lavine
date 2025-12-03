@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d92dab-dc15-4753-bf61-19e202b2b01c" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/lavine.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/2-2/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/2-2/test.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/GroupServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/GroupServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/TaskServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,7 @@
       <workItem from="1764506893219" duration="313000" />
       <workItem from="1764507216823" duration="4657000" />
       <workItem from="1764588896823" duration="2093000" />
-      <workItem from="1764770062017" duration="4227000" />
+      <workItem from="1764770062017" duration="5071000" />
     </task>
     <servers />
   </component>

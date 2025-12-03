@@ -4,6 +4,7 @@ import com.cemware.lavine.dto.TaskResponse;
 import com.cemware.lavine.entity.Group;
 import com.cemware.lavine.entity.Task;
 import com.cemware.lavine.entity.User;
+import com.cemware.lavine.exception.ResourceNotFoundException;
 import com.cemware.lavine.repository.TaskRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -64,7 +65,7 @@ class TaskServiceTest {
 
         // when & then
         assertThatThrownBy(() -> taskService.getTask(taskId))
-                .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("할 일을 찾을 수 없습니다");
+                .isInstanceOf(ResourceNotFoundException.class)
+                .hasMessageContaining("찾을 수 없습니다");
     }
 }

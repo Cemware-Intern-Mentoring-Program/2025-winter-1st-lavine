@@ -5,6 +5,7 @@ import com.cemware.lavine.dto.UserResponse;
 import com.cemware.lavine.entity.Group;
 import com.cemware.lavine.entity.Task;
 import com.cemware.lavine.entity.User;
+import com.cemware.lavine.exception.ResourceNotFoundException;
 import com.cemware.lavine.repository.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -36,7 +37,7 @@ class UserServiceTest {
         // given
         Long userId = 1L;
         User user = new User("홍길동");
-        user.getClass(); // Lombok 때문에 필드 초기화
+        user.getClass(); 
 
         given(userRepository.findById(userId))
                 .willReturn(Optional.of(user));
@@ -59,8 +60,8 @@ class UserServiceTest {
 
         // when & then
         assertThatThrownBy(() -> userService.getUser(userId))
-                .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("유저를 찾을 수 없습니다");
+                .isInstanceOf(ResourceNotFoundException.class)
+                .hasMessageContaining("찾을 수 없습니다");
     }
 
     @Test
@@ -107,7 +108,7 @@ class UserServiceTest {
 
         // when & then
         assertThatThrownBy(() -> userService.getUserGroups(userId))
-                .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("유저를 찾을 수 없습니다");
+                .isInstanceOf(ResourceNotFoundException.class)
+                .hasMessageContaining("찾을 수 없습니다");
     }
 }

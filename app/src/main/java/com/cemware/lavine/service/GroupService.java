@@ -5,7 +5,7 @@ import com.cemware.lavine.dto.GroupResponse;
 import com.cemware.lavine.dto.GroupUpdateRequest;
 import com.cemware.lavine.entity.Group;
 import com.cemware.lavine.entity.User;
-import com.cemware.lavine.exception.ErrorMessage;
+import com.cemware.lavine.exception.ResourceNotFoundException;
 import com.cemware.lavine.mapper.TaskMapper;
 import com.cemware.lavine.repository.GroupRepository;
 import com.cemware.lavine.repository.UserRepository;
@@ -26,7 +26,7 @@ public class GroupService {
     @Transactional
     public GroupResponse createGroup(GroupCreateRequest request) {
         User user = userRepository.findById(request.userId())
-                .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.userNotFound(request.userId())));
+                .orElseThrow(() -> new ResourceNotFoundException("유저", request.userId()));
         
         Group group = new Group(user, request.name());
         Group savedGroup = groupRepository.save(group);
@@ -44,7 +44,7 @@ public class GroupService {
     @Transactional
     public GroupResponse updateGroup(Long id, GroupUpdateRequest request) {
         Group group = groupRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.groupNotFound(id)));
+                .orElseThrow(() -> new ResourceNotFoundException("그룹", id));
         group.changeName(request.name());
         
         return new GroupResponse(
@@ -60,14 +60,14 @@ public class GroupService {
     @Transactional
     public void deleteGroup(Long id) {
         Group group = groupRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.groupNotFound(id)));
+                .orElseThrow(() -> new ResourceNotFoundException("그룹", id));
         // orphanRemoval = true로 설정되어 있어서 하위 할 일이 자동으로 삭제됩니다.
         groupRepository.delete(group);
     }
 
     public GroupResponse getGroup(Long id) {
         Group group = groupRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.groupNotFound(id)));
+                .orElseThrow(() -> new ResourceNotFoundException("그룹", id));
         
         return new GroupResponse(
                 group.getId(),
