@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4d92dab-dc15-4753-bf61-19e202b2b01c" name="변경" comment="" />
+    <list default="true" id="d4d92dab-dc15-4753-bf61-19e202b2b01c" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/AuthService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,6 +161,9 @@
       <workItem from="1764588896823" duration="2093000" />
       <workItem from="1764770062017" duration="5071000" />
       <workItem from="1765176101635" duration="1378000" />
+      <workItem from="1765406241675" duration="14799000" />
+      <workItem from="1765450090821" duration="941000" />
+      <workItem from="1765451064916" duration="1004000" />
     </task>
     <servers />
   </component>

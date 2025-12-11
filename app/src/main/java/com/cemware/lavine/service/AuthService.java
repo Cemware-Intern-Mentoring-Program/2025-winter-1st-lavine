@@ -4,12 +4,14 @@ import com.cemware.lavine.dto.AuthResponse;
 import com.cemware.lavine.dto.LoginRequest;
 import com.cemware.lavine.dto.RegisterRequest;
 import com.cemware.lavine.entity.User;
+import com.cemware.lavine.exception.DuplicateEmailException;
 import com.cemware.lavine.repository.UserRepository;
 import com.cemware.lavine.security.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,7 +29,7 @@ public class AuthService {
     @Transactional
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.findByEmail(request.email()).isPresent()) {
-            throw new IllegalArgumentException("이미 존재하는 이메일입니다: " + request.email());
+            throw new DuplicateEmailException(request.email());
         }
 
         User user = new User(
@@ -56,7 +58,7 @@ public class AuthService {
         );
 
         User user = userRepository.findByEmail(request.email())
-                .orElseThrow(() -> new IllegalArgumentException("사용자를 찾을 수 없습니다"));
+                .orElseThrow(() -> new UsernameNotFoundException("사용자를 찾을 수 없습니다"));
 
         String accessToken = jwtTokenProvider.createAccessToken(user.getEmail());
 
