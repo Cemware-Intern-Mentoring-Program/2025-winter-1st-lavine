@@ -2,7 +2,9 @@ package com.cemware.lavine.controller;
 
 import com.cemware.lavine.dto.AuthResponse;
 import com.cemware.lavine.dto.LoginRequest;
+import com.cemware.lavine.dto.RefreshTokenRequest;
 import com.cemware.lavine.dto.RegisterRequest;
+import com.cemware.lavine.dto.TokenResponse;
 import com.cemware.lavine.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -35,6 +37,20 @@ public class AuthController {
     public ResponseEntity<AuthResponse> login(@Valid @RequestBody LoginRequest request) {
         AuthResponse response = authService.login(request);
         return ResponseEntity.ok(response);
+    }
+
+    @PostMapping("/refresh")
+    @Operation(summary = "토큰 갱신")
+    public ResponseEntity<TokenResponse> refresh(@Valid @RequestBody RefreshTokenRequest request) {
+        TokenResponse response = authService.refresh(request.refreshToken());
+        return ResponseEntity.ok(response);
+    }
+
+    @PostMapping("/logout")
+    @Operation(summary = "로그아웃")
+    public ResponseEntity<Void> logout(@Valid @RequestBody RefreshTokenRequest request) {
+        authService.logout(request.refreshToken());
+        return ResponseEntity.noContent().build();
     }
 }
 

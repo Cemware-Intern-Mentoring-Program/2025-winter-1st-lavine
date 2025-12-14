@@ -6,8 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="d4d92dab-dc15-4753-bf61-19e202b2b01c" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/GroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/JwtAuthenticationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/JwtAuthenticationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/JwtTokenProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +179,9 @@
       <workItem from="1765176101635" duration="1378000" />
       <workItem from="1765406241675" duration="14799000" />
       <workItem from="1765450090821" duration="941000" />
-      <workItem from="1765451064916" duration="1004000" />
+      <workItem from="1765451064916" duration="3475000" />
+      <workItem from="1765750646170" duration="328000" />
+      <workItem from="1765750987593" duration="20000" />
     </task>
     <servers />
   </component>
