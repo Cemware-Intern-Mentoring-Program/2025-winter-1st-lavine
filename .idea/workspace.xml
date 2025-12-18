@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d92dab-dc15-4753-bf61-19e202b2b01c" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/GroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/GroupServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/GroupServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/TaskServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/TaskServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/cemware/lavine/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/GroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/JwtAuthenticationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/exception/JwtAuthenticationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/cemware/lavine/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,36 +84,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.app [dependencies].executor": "Run",
-    "Gradle.app 빌드.executor": "Run",
-    "Gradle.소스 다운로드.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.LavineApplication.executor": "Run",
-    "git-widget-placeholder": "lavine",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/github/cemware",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.app [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.app 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.소스 다운로드.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LavineApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lavine&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/github/cemware&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.LavineApplication">
     <configuration name="app [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -163,6 +176,12 @@
       <workItem from="1764507216823" duration="4657000" />
       <workItem from="1764588896823" duration="2093000" />
       <workItem from="1764770062017" duration="5071000" />
+      <workItem from="1765176101635" duration="1378000" />
+      <workItem from="1765406241675" duration="14799000" />
+      <workItem from="1765450090821" duration="941000" />
+      <workItem from="1765451064916" duration="3475000" />
+      <workItem from="1765750646170" duration="328000" />
+      <workItem from="1765750987593" duration="20000" />
     </task>
     <servers />
   </component>

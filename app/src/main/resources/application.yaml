@@ -18,3 +18,10 @@ springdoc:
     path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+
+jwt:
+  secret: YXQtbGVhc3QtMjU2LWJpdC1zZWNyZXQta2V5LWZvci1obWFjLXNoYTI1Ni1hbGdvcml0aG0tc3ByaW5nLWJvb3QtNC4wLXNlY3VyaXR5
+  access-token-validity-in-seconds: 3600
+  refresh-token-validity-in-seconds: 604800

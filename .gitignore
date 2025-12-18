@@ -22,3 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Documentation (generated guides)
+docs/JWT_AUTHENTICATION_GUIDE.md
+
+# Spring Boot config (local secrets)
+src/main/resources/application.yml
+src/main/resources/application.yaml
+src/main/resources/application-*.yml
+
